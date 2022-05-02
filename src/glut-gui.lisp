@@ -3,7 +3,7 @@
 
 ;; Menus
 
-(defvar *main-menu* (glut:create-menu (cffi:null-pointer)))
+(defvar *main-menu* nil)
 
 (cffi:defcallback minara-menu-select-callback :void ((value :int))
   (menu-select-hook value))
@@ -129,4 +129,5 @@
 (defgeneric display-window (glut:window))
 
 (defmethod display-window ((win window))
-  (glut:display-window win))
+  (glut:display-window win)
+  (setf *main-menu* (glut:create-menu (cffi:null-pointer))))

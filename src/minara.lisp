@@ -1,6 +1,6 @@
 ;; minara.lisp : setup and startup
 ;;
-;; Copyright (c) 2007 Rhea Myers, rhea@myers.studio
+;; Copyright (c) 2007, 2022 Rhea Myers, rhea@myers.studio
 ;;
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -22,10 +22,10 @@
 ;; This is a GLUT wart: if we started without a window open we'd quit
 
 (defun load-splash-screen ()
-  (display-window (make-window-from-file "../minara.minara")))
+  (display-window (make-window-from-file "./minara.minara")))
 	 
 
 ;; Main entry point / startup.
 
-(defun minara ()
- (load-splash-screen))
+(defun main-entry-point ()
+  (load-splash-screen))

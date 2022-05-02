@@ -1,34 +1,27 @@
-(defpackage :minara
-            (:use :cl :asdf))
-
-(in-package :minara)
-
-(asdf:defsystem :minara
-                :name "minara"
-                :version "0.1"
+(asdf:defsystem "minara"
+                :version "0.2"
                 :depends-on (:flexichain :cl-cairo2 :cl-opengl :cl-glu :cl-glut)
                 :serial t
-                :components
-                ((:file "packages")
-                 (:file "test")
-                 (:file "transformations")
-                 (:file "events")
-                 (:file "keymap")
-                 (:file "buffer")
-		 (:file "evaluation")
-		 (:file "window")
-                 (:file "cairo-rendering")
-		 (:file "glut-gui")
-		 (:file "minibuffer")
-                 (:file "undo")
-                 ;;(:file "buffer-stream")
-		 (:file "command-line")
-		 (:file "menu")
-		 (:file "geometry")
-		 ;;(:file "picking")
-		 (:file "tool")
-		 (:file "minara")
-                 ))
+                :components ((:file "packages")
+                             (:file "test")
+                             (:file "transformations")
+                             (:file "events")
+                             (:file "keymap")
+                             (:file "buffer")
+                             (:file "evaluation")
+                             (:file "window")
+                             (:file "cairo-rendering")
+                             (:file "glut-gui")
+                             (:file "minibuffer")
+                             (:file "undo")
+                             ;;(:file "buffer-stream")
+                             (:file "command-line")
+                             (:file "menu")
+                             (:file "geometry")
+		                     ;;(:file "picking")
+                             (:file "tool")
+                             (:file "minara")
+                             ))
 
 
 ;;(load "view-tools.lisp")

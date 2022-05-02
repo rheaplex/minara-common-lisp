@@ -1,6 +1,6 @@
 ;; package.lisp : the minara packages
 ;;
-;; Copyright (c) 2007 Rhea Myers, rhea@myers.studio
+;; Copyright (c) 2007, 2022 Rhea Myers, rhea@myers.studio
 ;;
 ;; This file is part of Minara.
 ;;
@@ -25,7 +25,7 @@
 	(:documentation
 	 "Minara public API.")
 	(:use :cl)
-	(:export :minara
+	(:export :main-entry-point
 		 ;; Transformations
 		 :matrix :make-matrix-identity :make-matrix-scale 
 		 :make-matrix-translate :make-matrix-rotate :matrix-to-string
@@ -66,7 +66,8 @@
 		 :point :add-point :divide-point :point-line-side
 		 :bezier-eval :line-bezier-intersection-count-vertices
 		 ;; Tools
-		 :install-tool)))
+	     :install-tool)
+    ))
 
 (eval-when (:COMPILE-TOPLEVEL :LOAD-TOPLEVEL :EXECUTE)
   (defpackage minara-rendering

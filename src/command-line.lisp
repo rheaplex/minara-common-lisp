@@ -40,9 +40,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (defun cli-version ()
-  (write-line "minara 0.1")
-  (write-line "Copyright (C) 2004-2007 Rhea Myers")
-  (write-line "You may redistribute copies of Emacs")
+  (write-line "minara 0.2")
+  (write-line "Copyright (C) 2004-2007, 2022 Rhea Myers")
+  (write-line "You may redistribute copies of Minara")
   (write-line "under the terms of the GNU General Public License v3 or later.")
   (write-line 
    "For more information about these matters, see the file named COPYING."))

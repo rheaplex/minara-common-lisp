@@ -207,7 +207,6 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Scale factors and view translation factors.
-;; If anyone can explain this to me I'd be very grateful... - Rob.
 
 (defun next-zoom-out-level (current)
   (if (= current
